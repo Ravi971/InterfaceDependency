@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+	<bean name="student" class="srpinglifecycle.Student" p:id="111"
+		p:name="jhon" p:marks="90.0" init-method="hi" destroy-method="bye">
+	</bean>
+
+	<bean name="student1" class="srpinglifecycle.Student" p:id="222"
+		p:name="smith" p:marks="99.9" init-method="hi" destroy-method="bye"
+		scope="prototype">
+	</bean>
+
+
+
+</beans>
+
+
+
+
+
